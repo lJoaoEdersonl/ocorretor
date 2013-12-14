@@ -1,0 +1,44 @@
+ï»¿<div id="panel-busca">
+    <form method="post" action="[baseUri]/index/busca/">
+        <select name="finalidade" id="finalidade" class="sel1">
+            <option value="0">Transação...</option>
+            <option value="1">Venda</option>
+            <option value="2">Locação</option>
+            <option value="4">Temporada</option>
+        </select>
+
+        <select name="tipo" id="tipo" class="sel1">
+            <option value="0">Tipo...</option>
+            <!--{loop:tpb}-->
+            <!--{ <option value="tpb.tipo_id" name="tpb.tipo_url">tpb.tipo_title</option>}-->
+            <!--{end:tpb}-->    
+        </select>
+
+        <select name="cidade" id="cidade" class="sel1">
+            <option value="0">Cidade...</option>
+            <!--{loop:catb}-->
+            <!--{ <option value="catb.categoria_id" name="catb.categoria_url">catb.categoria_title</option>}-->
+            <!--{end:catb}-->    
+        </select>
+
+        <select name="dorms" id="dorms" class="sel1">
+
+        </select>
+
+        <select name="valormax" id="valormax" class="sel1 valor_venda">
+        </select>
+
+        <select name="valormax" id="valormax" class="sel1 valor_locacao hide">
+        </select>
+
+        <p style="text-align: center">
+            <button class="btn btn-small" type="button" id="btn-busca">
+                <i class="icon-search "></i> Pesquisar Imóveis usando os critérios acima</button>
+        </p>
+    </form>
+</div>
+<div class="bot-panel-container">
+    <div class="bot-panel">
+        <p><i class="icon-search icon-white"></i> Busca Avançada</p>
+    </div>                
+</div> 

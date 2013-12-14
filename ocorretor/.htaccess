@@ -1,0 +1,22 @@
+RewriteEngine On
+
+# Diretorios extras
+RewriteRule ^teste - [L,NC]
+
+#padrozinar diretorio /admin
+RewriteRule ^admin/([a-zA-Z0-9-_/]+)/?$ ./index.php?dir=admin&route=$1 [L,QSA]
+RewriteRule ^admin/([a-zA-Z0-9-_/]+)?$ ./index.php?dir=admin&route=index [L,QSA]
+RewriteRule ^admin([a-zA-Z0-9-_/]+)?$ ./index.php?dir=admin&route=index [L,QSA]
+
+#Diretorios da base
+RewriteRule ^([a-zA-Z0-9-_/]+)/?$ ./index.php?route=$1 [L,QSA]
+RewriteRule ^([a-zA-Z0-9-_/]+)?$ ./index.php?route=index [L,QSA]
+
+#Pagina 404
+ErrorDocument 404 404.php
+
+
+
+
+
+

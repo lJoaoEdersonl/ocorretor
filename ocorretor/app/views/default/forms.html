@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+    <head>
+        <title>PHPFrodo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <link href="css/default/css.php?f=default/base,default/style" type="text/css" rel="stylesheet" />
+        <link rel="stylesheet" href="jscripts/jquery/select2/select2.css" type="text/css" />
+        <script src="jscripts/default/js.php?f=jquery/jquery.min,jquery/select2/select2,default/loader,default/tpl" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="status-bar">
+            <div class="container_12">
+                <ul id="status-infos">
+                    <li class="spaced">PHPFrodo <strong> Small Framework</strong></li>
+                </ul>      
+                <ul id="breadcrumb" class="mar-l-15">
+                    <li><a href="javascript:void(0)">PHPFrodo</a></li>
+                    <li><a href="javascript:void(0)">Home</a></li>
+                    <li><a href="javascript:void(0)">Demos</a></li>
+                    <li><a href="javascript:void(0)">Formulários</a></li>
+                </ul>                 
+            </div>        
+        </div>   
+
+        <div id="control-bar" class="grey-bg clearfix">
+            <div class="container_12">
+                <div class="float-right mar-r-15"> 
+                    <button type="button" class="grey" id="toDown">M1</button> 
+                    <button type="button" class="grey" id="toUp">M2</button> 
+                </div>
+            </div>
+        </div>        
+        <div id="wrap" class="container_12">
+
+            <div class="grid_12">
+
+                <p>&nbsp;</p>
+                <div class="block-border">
+                    <div class="block-content">
+                        <div class="block-controls">
+                            <ul class="controls-tabs js-tabs with-children-tip">
+                                <li>
+                                    <a href="<!--{baseUri}-->/demo/" title="Home">
+                                        <img src="images/icons/start.png" width="24" height="24"></a>
+                                </li>
+
+                                <li class="current"><a href="<!--{baseUri}-->/demo/forms/" title="Formulários">
+                                        <img src="images/icons/forms.png" width="24" height="24"></a>
+                                </li>
+                                <li><a href="<!--{baseUri}-->/demo/tables/" title="Tabelas">
+                                        <img src="images/icons/table.png" width="24" height="24"></a>
+                                </li>
+                                <li><a href="<!--{baseUri}-->/demo/mobile/" title="Dispositivos Móveis">
+                                        <img src="images/icons/mobile.png" width="24" height="24"></a>
+                                </li>          
+                                <li><a href="<!--{baseUri}-->/demo/menu/" title="Menus">
+                                        <img src="images/icons/menu.png" width="24" height="24"></a>
+                                </li>         
+                                <li><a href="<!--{baseUri}-->/demo/upload/" title="Upload">
+                                        <img src="images/icons/upload.png" width="24" height="24"></a>
+                                </li>                                    
+                                <li><a href="javascript:void(0)" title="Logout">
+                                        <img src="images/icons/logout-gray.png" width="24" height="24"></a>
+                                </li>					
+                            </ul>
+                        </div>
+
+                        <div class="side-by-side clearfix">
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <select data-placeholder="Selecione uma categoria" name="s5" style="width:250px;" 
+                                                    class="select2">
+                                                <option></option>
+                                                <!--{loop:data}-->
+                                                <!--{<option value="data.categoria_id">data.categoria_title</option>}-->
+                                                <!--{end:data}-->
+                                            </select>                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>&nbsp;</p>
+                                            <select data-placeholder="Selecione os Itens" multiple name="s3[]" style="width:250px;" class="select2">
+                                                <option></option>
+                                                <!--{loop:datac}-->
+                                                <optgroup label="<!--{datac.categoria_title}-->">
+                                                    <!--{loop:item}-->
+                                                    <!--{<option value="datac.item.item_desc">datac.item.item_desc</option>}-->
+                                                    <!--{end:item}-->
+                                                </optgroup>
+                                                <!--{end:datac}-->
+                                            </select>                                            
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                            </div> 
+
+                            <div id="redactor">
+                                <!--{editor}-->
+                            </div>
+
+
+                        </div> 
+
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript"> 
+            $(".select2").select2(); 
+        </script>    
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#editor').redactor({ 	
+                    imageUpload: '<!--{baseUri}-->/demo/editorUploadIm/',
+                    fileUpload: '<!--{baseUri}-->/demo/editorUploadFile/',
+                    imageGetJson: '<!--{baseUri}-->/demo/editorJsonList/'
+                });
+            });
+        </script>
+
+    </body>
+</html>

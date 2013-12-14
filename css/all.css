@@ -1,0 +1,724 @@
+﻿/* Reset */
+.center{margin:0 auto;}
+a{text-decoration:none;}
+a img{ border:none;}
+
+html, body, div, span, applet, objeto, iframe
+h1, h2, h3, h4, H5, H6, p, blockquote, pre,
+a, abbr, endereço sigla, grande, citar, código,
+del, dfn, em, img, ins, kbd, q, s, samp,
+greve, pequeno, forte, sub, sup, tt, var,
+b, u, i, centro,
+dl, dt, dd, ol, ul, li,
+fieldset, formulário, etiqueta, legenda,
+tabela, a legenda, tbody, tfoot, thead, tr, th, td,
+lona artigo, de lado, detalhes, embed, 
+figura, figcaption, cabeçalho, rodapé, hgroup, 
+menu, nav, de saída, rubi, seção, resumo,
+tempo, marca, áudio, vídeo {
+	margin: 0;
+	padding: 0;
+	margem: 0;
+	font-size: 100%;
+	font: herdar;
+	vertical-align: baseline;
+}
+
+artigo, de lado, detalhes, figcaption, figura, 
+cabeçalho, rodapé, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	overflow-x:hidden;
+
+}
+ul, ol {
+	list-style: none;
+	font-family:Verdana, Geneva, sans-serif;
+	color: #999;
+	font-size:11px;
+	line-height:15px;
+}
+p, tr{	
+	font-family:Verdana, Geneva, sans-serif;
+	color: #999;
+	font-size:11px;
+	line-height:15px;
+}
+blockquote, q {
+	citações: nenhum;
+}
+blockquote: antes, blockquote: depois,
+q: antes, q: after {
+	conteúdo:'';
+	conteúdo: none;
+}
+tabela {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a img{border:0px;}
+/* Reset */
+
+
+
+    /* Inicio */
+
+body{
+	background: url(../img/bk.jpg);
+	background-attachment:fixed;}
+
+
+    /* Topo */
+#top{
+	width:100%;
+	height: auto;
+	padding:0 0 7px 0;
+	background:url(../img/bk_top.jpg) repeat-x;
+	box-shadow:0 1px 4px #999999;}
+#top #topo_logo{
+	width:1000px;
+	height:198px;
+	margin:0 auto;}	
+#top #topo_logo .logo{}	
+#top #topo_logo .ilust{
+	width:596px;
+	height:200px;
+	float: right;
+	background: url(../img/img_ilust.jpg);}
+#top #parttop{
+	width:1000px;
+	height:53px;
+	position: relative;
+	top:-10px;
+	margin:0px auto;}	
+
+	
+
+
+    /* Inicio do Conteudo */
+#conteudo1{
+	width:100%;
+	height:auto;}
+#conteudo1 #parte1{
+	width:1000px;
+	height: auto;
+	margin:0 auto;
+	border-radius:10px;}
+#conteudo1 #parte1 .dwuserEasyRotator{
+	margin:10px auto;
+	box-shadow:0 1px 3px #666;}	
+	
+
+#parte2{
+	width:1000px;
+	height: auto;
+	float:left;
+	padding:7px 0 0 0;
+	margin:0 auto;
+	border-radius:5px;}
+.space{
+	position:relative;
+	top:-15px;}	/*<<<<<<<<Distancia entre o topo e o conteudo (Nividades)*/	
+	
+	/* Propaganda */
+#conteudo1 #parte2 .box1{
+	width:345px;
+	height:400px;
+	margin:0 0 0 19px;
+	border-radius:5px;
+	float:left;
+	background: url(../img/ilu1.png) no-repeat left bottom #fff;
+	box-shadow:0 1px 3px #666;}
+#conteudo1 #parte2 .box1 p{
+	width:170px;
+	color:#09C;
+	font-family: 'Helvetica Neue',Helvetica,Arial,_sans;
+	font-size:12px;
+	font-weight: 800;
+	margin:85px 30px 0 0;
+	float:right;}
+#conteudo1 #parte2 .box1 p span{
+	color:#09C;
+	line-height:20px;
+	font-family: 'Helvetica Neue',Helvetica,Arial,_sans;
+	font-size:12px;
+	font-weight: normal !important;
+	padding:10px 0 0 10px;
+	margin:0 15x 0 0;
+	float:right;}	
+  
+  
+    /* Box que contem o formulario de pesquisa */	
+#conteudo1 #parte2 .box2{
+	width:602px;
+	height:400px;
+	margin:0 0 0 15px;
+	border-radius:0 0 10px 10px ;
+	float:left;
+	background:#FFF;
+	box-shadow:0 1px 3px #666;}					
+#conteudo1 #parte2 .box2 h3{
+	color:#fff;
+	font-family: 'Helvetica Neue',Helvetica,Arial,_sans;
+	font-size:14px;
+	margin:0 0 0 0;
+	letter-spacing:1px;
+	font-weight: normal !important;
+	background:#50afca;
+	padding:13px 0 13px 15px;
+	box-shadow:0 1px 5px #999;}
+	/* Formulario */
+#conteudo1 #parte2 .box2 form{
+	width:517px;
+	height:250px;
+	border:#ccc 1px solid;
+	margin:30px 0 0 23px;
+	padding:30px 20px 20px 20px}
+.box2 form #fp2{
+	width:230px;
+	margin:0 0 0 25px;
+	height:auto;
+	float:left;}		
+.box2 form label{
+	color:#999;
+	font-family: 'Helvetica Neue',Helvetica,Arial,_sans;
+	font-size:12px;
+	position:relative;}
+.box2 form select{
+	color:#999;
+	width:200px;
+	height:30px;
+	border-radius:3px;
+	-o-border-radius:3px;
+	-moz-border-radius:3px;
+	border:1px #CCCCCC solid;}	
+.box2 form #pesquisa{
+	width:200px;
+	text-align:center;
+	color:#FFF;
+	border:0px;
+	font-size:14px;
+	margin:5px; 0 0 0;
+	padding:10px 10px;
+	box-shadow:0 1px 3px #ccc;
+	background: #069;
+	border-radius:3px;
+	-o-border-radius:3px;
+	-moz-border-radius:3px;}
+.box2 form #pesquisa:hover{
+	background: #C41115;
+	cursor:pointer;}			
+
+
+    /* Novidades */
+.center1{
+	width:960px;
+	margin:0 auto;}	
+.center{
+	width:960px;
+	position:relative;
+	top:-10px;}	/*<<<<<<<<Distancia entre o topo e o conteudo (Sobre, Serviços, Contato, Imovel*/	
+#conteudo1 #novidades{
+	width:960px;
+	height:auto;
+	border-radius:5px;
+	background:#fff;
+	margin:15px 0 0 0;
+	padding:0px 0 0px 0;
+	box-shadow:0 1px 3px #666;
+	float:left;}	
+#conteudo1 #novidades h3{
+	font-size:20px;
+	width:935px;
+	background:#50afca;
+	padding:10px 0 10px 25px;
+	margin:0 0 0 0;
+	color:#fff;
+	border-radius:5px 5px 0 0;}	
+	 /* Box do conteudo dentro de novidades */
+#conteudo1 #novidades .casa{
+	width:928px;
+	height:auto;
+	border-bottom:1px solid #ccc;
+	padding:0 0 30px 0;
+	margin:30px 0 40px 15px;
+	float:left;}
+	 /* Imagen da casa*/	
+#conteudo1 #novidades .casa img{
+	width:200px;
+	height:150px;
+	float:left;
+	margin: 0 0 0 10px;
+	border-radius:5px;
+	box-shadow:0 1px 3px #666;}
+		
+	
+    /* Box do texto */	
+#conteudo1 #novidades .casa .box_txt{
+	width:525px;
+	height:auto;
+	float:left;
+	padding:0 0 0 0;
+	margin: 0 0 0 15px;
+	border-radius:5px;}
+#conteudo1 #novidades .casa .box_txt .data1, .box_txt .preco, .box_txt .valor, .box_txt .texto, .box_txt .botao, #novidades h3{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	font-weight:300;
+	color:#50afca;}
+	
+.box_txt .data1{
+	border-bottom:1px solid #CCE4EC;
+	padding:0 0 10px 0;}	
+.box_txt .preco{
+	margin:15px 0px 0 0;
+	float:left;}	
+.box_txt .valor {
+	color: #0C0;
+	font-size:14px;}
+.box_txt .texto{
+	font-size:11px;
+	color: #999;
+	line-height:15px;}	
+.box_txt .botao{
+	width:100px;
+	height:40px;
+	text-align:center;
+	float: right;
+	margin:15px 20px 0 0;}
+.box_txt .botao a{
+	padding:10px 30px;
+	color: #fff;
+	background: url(../img/bk_bt.jpg);
+	border-radius:15px;}	
+.box_txt .botao a:hover{
+	background: url(../img/bk_bt2.jpg);
+	box-shadow:0 1px 5px #999999;}	
+	
+			
+    /*Box da Data */	
+#conteudo1 #novidades .casa h2{
+	border:#ccc 1px solid;
+	float:left;
+	padding:25px 20px;
+	margin: 0 0 0 15px;
+	border-radius:5px;
+	font-size:80px;
+	font-family:Verdana, Geneva, sans-serif;
+	background:#50afca;
+	color:#FFF;}
+#conteudo1 #novidades .casa h2 span{
+	font-size:20px;}			
+
+
+
+
+/***** Sobre, Seviços e Contatos *********************************************************************************************************************************/
+#conteudo1 #sobre{
+	width:960px;
+	height:auto;
+	border-radius:5px;
+	background:#fff;
+	margin:0 0 0px 0;
+	padding:0px 0 30px 0;
+	box-shadow:0 1px 3px #666;
+	float:left;}
+#conteudo1 #sobre h3{
+	font-size:20px;
+	width:935px;
+	background:#50afca;
+	font-weight: normal !important;
+	padding:10px 0 10px 25px;
+	margin:0 0 0 0;
+	color:#fff;
+	font-family:Verdana, Geneva, sans-serif;
+	border-radius:5px 5px 0 0;}
+	
+	/*Box Sobre, Usado em Sobre, Serviços, Contatos*/
+#conteudo1 #sobre #box_sobre{
+	width:960px;
+	height:auto;
+	padding:30px 0 ;}/*Box Sobre, Usado em Sobre, Serviços, Contatos*/	
+#conteudo1 #sobre #sb1{
+	width:460px;
+	height: auto;
+	float:left;
+	margin: 0 0 0 18px;}
+#conteudo1 #sobre #sb1 img, #conteudo1 #sobre #sb2 img{
+	width:460px;
+	height:300px;
+	margin:0 0 30px 0px;
+	box-shadow:0 1px 3px #666;}
+#conteudo1 #sobre #sb1 .title, #conteudo1 #sobre #sb2 .title{
+	color:#50afca;
+	font-size:20px;
+	width:300px;
+	padding:0 0 30px 0;
+	border-bottom:1px solid #CCE4EC;
+	margin:0 0 0 15px;
+	font-family:Verdana, Geneva, sans-serif;}
+#conteudo1 #sobre #sb1 .title2, #conteudo1 #sobre #sb2 .title2{
+	color:#50afca;
+	font-size:15px;
+	width:300px;
+	padding:0 0 30px 0;
+	border-bottom:1px solid #CCE4EC;
+	margin:0 0 0 15px;
+	font-family:Verdana, Geneva, sans-serif;}	
+	
+#conteudo1 #sobre #sb1 p, #conteudo1 #sobre #sb2 p{
+	width:430px;
+	height:auto;
+	line-height:20px;
+	margin:20px auto;
+	color:#999;
+	font-size:11px;
+	font-family:Verdana, Geneva, sans-serif;}	
+#conteudo1 #sobre #sb2{
+	width:460px;
+	height: auto;
+	float:left;}
+
+/***** Serviços************************************************/	
+
+#conteudo1 #sobre #sb1 .sr1, #conteudo1 #sobre #sb2 .sr1{
+	width:430px;
+	height:auto;
+	margin:0 0 0 20px;
+	padding:0px 0 30px 0;
+	border-bottom:1px solid #CCC;}
+
+#conteudo1 #sobre #sb1 .sr1 img, #conteudo1 #sobre #sb2 .sr1 img{
+	float:left;
+	width:100px;
+	height:100px;
+	margin:0 10px 0px 0px;
+	box-shadow:0 1px 3px #666;}	
+#conteudo1 #sobre #sb1 .sr1 p, #conteudo1 #sobre #sb2 .sr1 p{
+	width:400px;
+	height:auto;}
+	
+
+/**** Contatos***********************************************************/
+#conteudo1 #parte1 .center .contatos{
+	background: url(../img/bk_contatos.gif) no-repeat bottom #fff;}
+#box_sobre .info{
+	width:800px;
+	text-align:center;
+	margin:0 auto;
+	color:#50afca;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:13px;
+	padding:0 0 20px 0;
+	border-bottom:1px solid #CCE4EC;}	
+#box_sobre form{
+	width:400px;
+	height:auto;
+	padding:20px 20px 30px 20px;
+	margin:20px auto;
+	background:#FFF;
+	box-shadow:0 0px 3px #666;
+	border-radius:5px;
+	-o-border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;}
+#box_sobre form label{
+	color:#999;
+	font-family: 'Helvetica Neue',Helvetica,Arial,_sans;
+	font-size:12px;}	
+#box_sobre form input{
+	width:400px;
+	height:30px;
+	margin:0 0 10px 0;
+	border-radius:5px;
+	-o-border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:1px #CCCCCC solid;
+	color: #B0B0B0;
+	font-family: 'Helvetica Neue',Helvetica,Arial,_sans;
+	font-size:16px;}
+#box_sobre form textarea{
+	min-width:399px;
+	min-height:150px;
+	max-width:399px;
+	max-height:150px;
+	border-radius:5px;
+	-o-border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:1px #CCCCCC solid;
+	overflow-y:auto;}	
+#box_sobre form #enviar{
+	width:100px;
+	height:30px;
+	text-align:center;
+	color:#FFF;
+	border:0px;
+	font-size:14px;
+	margin:10px 0 0 0;
+	box-shadow:0 1px 3px #ccc;
+	background:#50afca;
+	border-radius:3px;
+	-o-border-radius:3px;
+	-moz-border-radius:3px;}
+#box_sobre form #enviar:hover{
+	background: #099;
+	cursor:pointer;}		
+
+
+
+
+/* Caixa a onde se encontram rede sociais, entrar em contato, texto e valor ************************************/
+
+
+#box_sobre .t{
+	width:620px;
+	float:right;
+	color:#50afca;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:16px;
+	padding:0 0 30px 0 ;
+	margin:0px 0 30px 0px ;
+	border-bottom:1px solid #CCE4EC;}
+#box_sobre .t span{
+	float:right;}	
+#box_sobre span img{
+	margin:0 0 0 5px;
+	border-radius:5px;
+	-o-border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;}
+#box_sobre span img:hover{
+	box-shadow:0 1px 3px #666;	}
+#box_sobre .preco{
+	padding:0 0 20px 0;
+	margin:20px 200px 0 0;
+	float: right;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#50afca;}	
+#box_sobre .preco .valor{
+	color: #F90;
+	font-size:20px;}	
+#box_sobre .bt_contato{
+	width:200px;
+	float: right;
+	font-family:Verdana, Geneva, sans-serif;
+	text-align:center;
+	margin:20px 20px 0 0;}
+#box_sobre .bt_contato a{
+	padding:10px 30px;
+	font-size: 13px;
+	color: #fff;
+	background: #F90;}	
+#box_sobre .bt_contato a:hover{
+	background:#50afca;
+	box-shadow:0 1px 5px #999999;}	
+
+/****Visualização do Imovel***************************************************************************************/	
+	
+
+#box_sobre #box{
+	width:900px;
+	height:auto;
+	padding:0 0 80px 0;
+	margin:0 auto; }	
+#box_sobre #box_dados-imovel .imovel{
+	float:left;
+	margin:0 20px 0 0;
+	width:250px;
+	height:250px;
+	box-shadow:0 1px 4px #999;}	
+
+	
+#box_sobre .txt_dados{
+	width:850px;
+	height:auto;
+	margin:30px 0 0 0px ;
+	padding:0 200px 10px 0 ;
+	color:#999;
+	line-height:20px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:11px;}
+
+
+   /*Dados*/
+#box_sobre .divide{
+	float:left;
+	margin: 0 0 0px 0;}
+#box_sobre .dados{
+	width:240px;
+	height:20px;
+	margin:30px 0 0px 60px;}
+.dados li{
+	color:#999;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:11px;
+	margin:0 0 5px  10px;}
+.dados .nome_dado{
+	padding:0 0 5px 0;
+	border-bottom:1px solid #CCE4EC;
+	font-size:13px;
+	width:150px;
+	color:#50afca;}
+.dados #valor_dados{
+	width:150px;
+	text-align:right;}	
+
+
+
+
+   /*Slide, Galeria*/
+#box_sobre	#sled_casa{
+	width:900px;
+	height:auto;
+	float:left;
+	padding:0 0 30px 0 ;
+	margin:0 0 0 30px ;}
+	
+
+
+    /*Chat*/
+ .chat_ajust1{
+	 margin:15px 0 0 0;}
+ .chat_ajust2{
+	 margin:15px 0 0 0;}	 	
+ #chat{
+	width:900px;
+	height:auto;
+	float:left;
+	padding:25px 30px;
+	border-radius:5px;
+	-o-border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background:#FFF;
+	box-shadow:0 1px 3px #666;}	
+ #chat .chat{
+	width:400px;
+	height:200px;
+	border-radius:50px 0 50px 0px;
+	-o-border-radius:50px 0 50px 0px;
+	-moz-border-radius:50px 0 50px 0px;
+	-webkit-border-radius:50px 0 50px 0px;
+	box-shadow:0 1px 3px #666;
+	float:left;}			
+ #chat .title_chat{
+	width:300px;
+	float:left;
+	color:#50afca;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:15px;
+	margin:0 0 20px 20px;
+	padding:0 0 20px 0;
+	border-bottom:1px solid #CCE4EC;}	
+ #chat .txt_chat{
+	width:460px;
+	height: auto;
+	line-height:20px;
+	color:#999;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:11px;
+	margin:0 0 0px 20px;
+	padding:0 0 10px 0;
+	float:left;}
+a .chat_acesso{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:22px;
+	color:#fff;
+	text-align:center;
+}
+ #chat .chat_acesso{
+	width:200px;
+	padding:20px 0;
+	margin:10px 30px 0px 0px;
+	float: right;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:22px;
+	color:#fff;
+	text-align:center;
+	border-radius:20px 0 20px 0px;
+	-o-border-radius:20px 0 20px 0px;
+	-moz-border-radius:20px 0 20px 0px;
+	-webkit-border-radius:20px 0 20px 0px;
+	background:#50afca;}
+	
+ #chat .chat_acesso:hover{	
+	box-shadow:0 1px 3px #666;
+	background:#dc3c5e;
+	cursor:pointer;}
+	
+	
+
+    /* Footer */	
+#footer{
+	width:100%;
+	height:210px;
+	margin:15px 0 0 0;
+	background: url(../img/bk_footer.jpg);
+	box-shadow:0 -2px 3px #999;
+	float:left;}
+#footer #box_footer{
+	margin:0 auto;
+	width:960px;
+	height:200px;}	
+#footer #box_footer ul{
+	width:200px;
+	height:150px;
+	float:left;
+	margin:30px 0 0 50px;
+	border-right:#999 1px solid;}
+	
+	
+	/* Social */
+#footer #box_footer .social{
+	width:400px;
+	border:0px !important;}
+#footer #box_footer .social li{
+	width:200px;
+	float:left;
+	margin:0 0 5px 0;
+	padding: 0 0px 0 0 ;}	
+#footer #box_footer .social li img{
+	margin:0 0 0 0;
+	float:left;}	
+#footer #box_footer .social li a{
+	padding:10px;
+	color:#CCC;
+	float: left;}	
+		
+	/* SitMap */	
+#footer #box_footer ul .topico{
+	font-size:14px;
+	color:#CCC;
+	padding:0 0 10px 0;
+	margin:0 0 10px 0;
+	font-family:Verdana, Geneva, sans-serif;
+	border-bottom:#999 1px solid;}
+#footer #box_footer ul li{
+	font-size:12px;
+	margin:0 0 10px 0;
+	color:#CCC;
+	font-family:Verdana, Geneva, sans-serif;}
+#footer #box_footer ul li a{
+	color:#CCC;}		
+#footer #box_footer ul li a:hover{
+	text-decoration:underline;}		
+	
+#footer #box_footer  span{
+	font-family:Verdana, Geneva, sans-serif;
+	color: #666;
+	font-size:11px;
+	position:relative;
+	top:10px;
+	margin:0  250px 0 0;
+	float:right;}	
+
+
+
+
+
+	

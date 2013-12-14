@@ -1,0 +1,694 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hostgator - Hospedagem de Sites | Primeiros PAssos</title>
+<style>
+html {
+overflow: -moz-scrollbars-vertical;
+}
+a:focus {
+outline: 0px solid;
+}
+a{
+color: #336799;
+font-weight: bold;
+}
+
+img {
+border: 0;
+}
+body {
+font-family: Tahoma, Helevetica, Arial;
+font-size: 12px;
+background-image: url('http://hostgator.com.br/index_arquivos/bg.gif');
+margin: 0;
+}
+#body {
+font-family: Tahoma, Helevetica, Arial;
+font-size: 12px;
+background-image: url('http://hostgator.com.br/index_arquivos/bg.gif');
+margin: 0;
+}
+div {
+outline: 0px dotted #000;
+}
+.clear {
+clear: both;
+}
+#wrapper {
+width: 765px; 
+margin: 10px auto;
+}
+#container {
+margin: auto;
+padding: 0 0 0px 0px;
+outline: 0px solid #000;
+}
+#shadow {
+background-image: url('http://hostgator.com.br/index_arquivos/leftshadow.png');
+background-position: 0px 100px;
+background-repeat: repeat-y;
+outline: 0px solid #fff;
+padding-left: 10px;
+}
+.head {
+background-image: url('http://hostgator.com.br/index_arquivos/header_top2.gif');
+background-repeat: no-repeat;
+height: 17px;
+position: relative;
+right: -4px;
+}
+.imgright {
+float: right;
+}
+.livechat a:link, .livechat a:visited {
+background-image: url('http://hostgator.com.br/index_arquivos/chatimage1.gif');
+background-repeat: no-repeat;
+width: 80px;
+height: 80px;
+display: block;
+float: right;
+}
+#header {
+width: 755px;
+background-image: url('http://hostgator.com.br/index_arquivos/logo_bg.gif');
+background-repeat: repeat-x;
+-moz-border-radius-topright: 5px;
+-moz-border-radius-topleft: 5px;
+position: relative;
+left: 10px;
+}
+.logo { 
+background-image: url('http://hostgator.com.br/index_arquivos/shadowlogo.png');
+background-repeat: no-repeat;
+height: 84px;
+position: relative;
+right: 10px;
+width: 400px;
+
+}
+#livesupport {
+	float: right;
+	padding: 3px 0px;
+	}
+
+ .support {
+float: right;
+background-image: url('http://hostgator.com.br/index_arquivos/toprightcorner.gif');
+background-repeat: no-repeat;
+background-position: top right;
+height: 84px;
+width: 320px;
+padding: 0 0 0 0;
+} 
+#navigation {
+background-image: url(http://hostgator.com.br/index_arquivos/newnav.png);
+height: 49px;
+border-bottom: 1px solid #000;
+}
+.navigation {
+font-size: 12px;
+font-weight: bold;
+padding: 0 0 0 0;
+margin: 0 0 0 0;
+list-style: none;
+}
+.navigation a {
+font-family: Tahoma;
+text-transform: uppercase;
+font-weight: bold;
+color: #FFFFFF;
+text-decoration:none;
+}
+.navigation a:link, .navigation a:visited {
+color: #ffffff; 
+}
+.navigation a:hover {
+color: #f7c945; 
+text-decoration:underline;
+}
+.navigation li {
+background-image: url(http://hostgator.com.br/index_arquivos/navsep.gif);
+background-repeat: no-repeat;
+background-position: 0 5px;
+float: left;
+margin: 12px 0 0 4px;
+padding: 5px 0 0 6px;
+height: 15px;
+}
+#content {
+background-color: #ffffff;
+}
+#content_assinar {
+background-color: #ffffff;
+float:left;
+width:auto;
+}
+.contents {
+/*height: 445px;*/
+background-color: #fff;
+padding:5px 5px 1px 5px;
+outline: 0px solid #000;
+}
+.shadowbottom {
+height: 22px;
+width: 775px;
+background-color: transparent;
+background-image: url('http://hostgator.com.br/index_arquivos/content-bottom.png');
+background-repeat: no-repeat;
+}
+.contents a {
+color: #336799;
+text-decoration: underline;
+font-weight: bold;
+}
+#footer {
+margin: 0px 0px 0px 10px;
+height: 15px;
+background-color: #ffffff;
+}
+.footertop {
+height: 7px;
+margin-left: 10px;
+background-color: transparent;
+background-image: url('http://hostgator.com.br/index_arquivos/roundtop.gif');
+background-repeat: no-repeat;
+}
+.copyright {
+float: right;
+padding: 1px 5px 0 0;
+}
+
+#rodape {
+	 background:url(http://hostgator.com.br/index_arquivos/rodape.jpg) no-repeat;
+	 width:764px;
+	 height:41px;
+	 margin-left:3px;
+}
+
+#rodape ul {
+	list-style-type: none;
+	margin: 5px 0 0 10px;
+	padding: 5px 3px;
+	width:615px;
+	float:left;
+	}
+
+#rodape li {
+	float: left;
+	margin-right: 10px;
+	}
+
+#rodape a {
+	color: #000;
+	}
+	
+#copyright {
+	text-align:right; 
+	margin:3px 8px 0 0;
+	width:105px;
+	float:right;
+}
+
+#copyright_home {
+	text-align:left; 
+	margin:10px 0 0 10px;
+	width:250px;
+	float:left;
+}
+
+/* NOVO RODAPE */
+
+#rodape_black {
+	background:url(http://hostgator.com.br/index_arquivos/bg_rodape.jpg) repeat-x #111 ;
+	height:620px;
+	width:100%;
+}
+
+#geral_rodape {
+	width:820px;
+	height:620px;
+	margin:10px auto;
+}
+
+#forum {
+	width:300px;
+	height:auto;
+	float:left;
+	margin-left:20px;
+}
+
+#blog {
+	width:250px;
+	height:auto;
+	float:left;
+	margin:0 0 20px 20px;
+}
+
+#contato {
+	width:200px;
+	_width:180px;
+	height:auto;
+	float:left;
+	margin-left:20px;
+}
+
+#baixo {
+	width:180px;
+	height:auto;
+	float:left;
+	margin-left:20px;
+	margin-top:20px;
+}
+
+#baixo {
+	width:180px;
+	height:auto;
+	float:left;
+	margin-left:20px;
+}
+
+.p5 {
+	border-bottom:1px solid #5b5b5b;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:none;
+	color:#d0d0d0;
+	width:100%;
+}
+
+.p5 a, .p5 a:visited{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:none;
+	color:#d0d0d0;
+	width:100%;
+	text-decoration:none;
+}
+
+.rodape1 a{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#a2c9e4;
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	font-weight:normal;
+	
+}
+
+.rodape2 {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+	margin:0;
+	padding:0 0 10px 0;
+	border-bottom:1px solid #333;
+}
+
+.rodape3 {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#999;
+	margin:0;
+	padding:0 0 10px 0;
+	border-bottom:1px solid #333;
+}
+
+.rodape4 {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#999;
+	margin:20px 0 0 0;
+	padding:0 0 10px 0;
+	text-align:center;
+}
+
+.rodape3 a, .rodape3 a:hover, .rodape3 a:visited{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#999;
+	margin:0;
+	padding:0 0 10px 0;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+#direitos {
+	width:800px;
+}
+
+#div_fixa_rodape {
+    width: 100%;
+	height:32px;
+	bottom: 0;
+    text-align: right;
+    position: fixed;
+    *position: absolute;
+	/*background-image:url(site-map-rodape.png);
+	background-position:right;
+	background-repeat:no-repeat;*/
+    top: expression( ( 0+( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+*{
+}
+
+#content {
+font-family: trebuchet ms;
+}
+#content_assinar {
+float:left;
+}
+.btn {
+display: block;
+height: 32px;
+}
+.btn:hover {
+background-position: 0 -32px;
+}
+
+/** PAGINA DEFAULT ***/
+
+#geral_dafault {
+	width:755px;
+	height:530px;
+}
+
+#links_rapidos {
+	background:url(http://hostgator.com.br/index_arquivos/bg_links_rapidos2.jpg) no-repeat;
+	width:520px;
+	height:286px;
+	float:left;
+	margin:10px 0 0 115px;
+	_margin:10px 0 0 55px;
+	padding:35px 0 0 10px;
+}
+
+.link1 a{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#3d648d;
+	text-decoration:none;
+}
+.link1 a:hover{
+	text-decoration:none;
+}
+
+#box_icos {
+	width:100px;
+	float:left;
+	margin-bottom:8px;
+}
+
+.bigbox {
+background-image:url(http://hostgator.com.br/index_arquivos/big_box.jpg);
+height: 166px;
+width:663px;
+margin:10px 0 0 50px;
+_margin:10px 0 0 25px;
+float:left;
+background-repeat: no-repeat;
+padding:10px 0 0 40px; 
+}
+.bigbox h3{
+font-family: trebuchet ms;
+font-size: 15px;
+font-weight: none;
+color: #336799;
+margin: 0px 0 5px 0;
+}
+
+.bigbox p {
+font-size: 12px;
+font-family: tahoma;
+margin: 0 0 10px 0;
+}
+
+/** FIM PAGINA DEFAULT ***/
+</style>
+<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="http://www.hostgator.com.br/ie6.css" />
+<![endif]-->
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="http://www.hostgator.com.br/ie7.css" />
+<![endif]-->
+<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" href="http://www.hostgator.com.br/ie8.css" />
+<![endif]-->
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="container"> <a name="topo"></a>
+    <div class="head"></div>
+    <div id="header">
+      <div id="livesupport">
+<!-- BEGIN LivePerson Button Code--> <div >
+<a id="_lpChatBtn" href='https://server.iad.liveperson.net/hc/43697559/?cmd=file&file=visitorWantsToChat&site=43697559&byhref=1&imageUrl=https://www.hostgator.com.br/images/chatbuttons' target='chat43697559'  onClick="lpButtonCTTUrl = 'https://server.iad.liveperson.net/hc/43697559/?cmd=file&file=visitorWantsToChat&site=43697559&imageUrl=https://www.hostgator.com.br/images/chatbuttons&referrer='+escape(document.location); lpButtonCTTUrl = (typeof(lpAppendVisitorCookies) != 'undefined' ? lpAppendVisitorCookies(lpButtonCTTUrl) : lpButtonCTTUrl); lpButtonCTTUrl = ((typeof(lpMTag)!='undefined' && typeof(lpMTag.addFirstPartyCookies)!='undefined')?lpMTag.addFirstPartyCookies(lpButtonCTTUrl):lpButtonCTTUrl);window.open(lpButtonCTTUrl,'chat43697559','width=475,height=400,resizable=yes');return false;" ><img src='https://server.iad.liveperson.net/hc/43697559/?cmd=repstate&site=43697559&channel=web&&ver=1&imageUrl=https://www.hostgator.com.br/images/chatbuttons' name='hcIcon' border=0></a>
+</div>
+<!-- END LivePerson Button code -->      
+      </div>
+    
+      <div class="logo" onclick="window.location='http://www.hostgator.com.br'"></div>
+    </div>
+    <div id="shadow">
+      <div id="navigation">
+        <ul class="navigation">
+                    <li style="background-image: none;"><a href="http://www.hostgator.com.br/">Home</a></li>
+                    <li><a href="https://www.hostgator.com.br/compartilhado/planos-de-hospedagem.php">Planos de Hospedagem</a></li>
+                    <li><a href="https://www.hostgator.com.br/compartilhado/planos-de-revenda.php">Planos de Revenda</a></li>
+                    <li><a href="https://www.hostgator.com.br/servidores/planos-de-servidor-dedicado.php">Servidores Dedicados</a></li>
+                    <li><a href="http://www.hostgator.com.br/suporte.shtml">Suporte</a></li>
+					<li><a href="https://www.hostgator.com.br/assinar-passo01.php">Assine J&aacute;</a></li>
+                    <li style="margin-right: 0px;"><a href="http://www.hostgator.com.br/afiliados.shtml">Afiliados</a></li>          
+        </ul>
+      </div>
+      
+      <div id="content">
+      <!--<div style="height:40px; width:410px; float:left;"></div>-->
+        <div id="geral_dafault">
+        	<div class="bigbox">
+            <h3>Caro Cliente,<br />
+Seja bem-vindo a Hostgator.</h3>
+
+<p>Esta é a sua página inicial enquanto o seu site não for publicado. <br />
+Aqui você encontrará alguns links que irão ajudá-lo nesse primeiro momento. </p>
+
+<p>Caso necessite de alguma informação não listada abaixo, por favor acesse o nosso Chat Online.</p>
+
+<p>Atenciosamente, <br /></p>
+<h3>HostGator Brasil</h3>
+            </div><!-- fim div bigbox-->
+            <div id="links_rapidos">
+                <div id="box_icos">
+                  <center>
+                    <a href="/cpanel"><img src="http://hostgator.com.br/index_arquivos/ico_painel.jpg" /></a><br />
+                    <a class="link1" href="/cpanel">Painel de Controle</a>
+                  </center>
+                </div><!-- fim div box_icos-->
+                <div id="box_icos">
+                  <center>
+                    <a href="/webmail"><img src="http://hostgator.com.br/index_arquivos/ico_mail.jpg" /></a><br />
+                    <a class="link1" href="/webmail">Acesso ao Webmail</a>
+                  </center>
+                </div><!-- fim div box_icos-->
+                 <div id="box_icos">
+                  <center>
+                    <a href="http://hostgator.com.br/primeiros_passos.php"><img src="http://hostgator.com.br/index_arquivos/ico_primeiros_passos.jpg" /></a><br />
+                    <a class="link1" href="http://hostgator.com.br/primeiros_passos.php">Primeiros Passos</a>
+                  </center>
+                </div><!-- fim div box_icos-->
+                 <div id="box_icos">
+                  <center>
+                    <a href="http://www.hostgator.com.br/financeiro"><img src="http://hostgator.com.br/index_arquivos/ico_financeiro.jpg" /></a><br />
+                    <a class="link1" href="http://www.hostgator.com.br/financeiro">Financeiro</a>
+                  </center>
+                </div><!-- fim div box_icos-->
+              <div id="box_icos">
+                  <center>
+                    <a href="http://hostgator.com.br/tutorials.shtml"><img src="http://hostgator.com.br/index_arquivos/ico_tutoriais.jpg" /></a><br />
+                    <a class="link1" href="http://hostgator.com.br/tutorials.shtml">Vídeos e Tutoriais</a>
+                  </center>
+                </div><!-- fim div box_icos-->
+                <div id="box_icos">
+                  <center>
+                    <a href="#"><img src="http://hostgator.com.br/index_arquivos/ico_dominio.jpg" /></a><br />
+                    <a class="link1" href="https://www.hostgator.com.br/assine-ja/01_registrar_dominio.php">Registrar um Domínio</a>
+                  </center>
+                </div><!-- fim div box_icos-->
+                <div id="box_icos">
+                  <center>
+                    <a href="http://faq.hostgator.com.br/"><img src="http://hostgator.com.br/index_arquivos/ico_faq.jpg" /></a><br />
+                    <a class="link1" href="http://faq.hostgator.com.br/">FAQ</a>
+                  </center>
+              </div><!-- fim div box_icos-->
+                <div id="box_icos">
+                  <center>
+                    <a href="http://hostgator.com.br/suporte.shtml"><img src="http://hostgator.com.br/index_arquivos/ico_suporte.jpg" /></a><br />
+                    <a class="link1" href="http://hostgator.com.br/suporte.shtml">Suporte</a>
+                  </center>
+                </div><!-- fim div box_icos-->
+                <div id="box_icos">
+                  <center>
+                    <a href="http://forum.hostgator.com.br/"><img src="http://hostgator.com.br/index_arquivos/ico_forum2.jpg" /></a><br />
+                    <a class="link1" href="http://forum.hostgator.com.br/">Fórum</a>
+                  </center>
+                </div><!-- fim div box_icos-->
+                <div id="box_icos">
+                  <center>
+                    <a href="http://hostgator.com.br/contatos.shtml"><img src="http://hostgator.com.br/index_arquivos/ico_contato2.jpg" /></a><br />
+                    <a class="link1" href="http://hostgator.com.br/contatos.shtml">Contatos</a>
+                  </center>
+                </div><!-- fim div box_icos-->
+            </div><!-- fim div links_rapidos-->
+        </div><!-- fim div geral_dafault-->
+        
+
+      </div><!-- fim div content-->
+    </div><!-- fim div shadow-->
+    <div class="shadowbottom"></div><!-- fim div shadowbottom-->
+  </div>
+</div><!-- fim div wrapper -->
+</div>
+<!-- fim div body -->
+<div style="width: 765px; margin:0px auto;"><img src="https://www.hostgator.com.br/images/rodape-pagamentos.jpg" width="769" height="40" border="0" usemap="#Map" />
+  <map name="Map" id="Map">
+    <area shape="rect" coords="362,3,397,31" href="#" alt="Boleto Bancário" title="Boleto Bancário"  />
+    <area shape="rect" coords="410,3,450,29" href="#" alt="Visa" title="Visa" />
+    <area shape="rect" coords="459,2,503,31" href="#" alt="Master Card" title="Master Card"/>
+    <area shape="rect" coords="511,2,555,31" href="#" alt="Dinners Club" title="Dinners Club"/>
+  </map>
+</div>
+<SCRIPT LANGUAGE=JavaScript>
+
+intImage = 2;
+
+function swapImage() {
+
+switch (intImage) {
+
+ case 1:
+
+   document.images['iconav'].src='https://www.hostgator.com.br/index_arquivos/site-map-rodape.png';
+
+   document.getElementById('link').href="#topo";
+
+   //IMG1.src = "index_arquivos/site-map-rodape.png"
+
+   intImage = 2
+
+   return(false);
+
+case 2:
+
+   document.images['iconav'].src='https://www.hostgator.com.br/index_arquivos/site-map-topo.png';
+
+   document.getElementById('link').href="#rodape";
+
+   //IMG1.src = "index_arquivos/site-map-topo.png"
+
+   intImage = 1
+
+   return(false);
+
+ }
+
+}
+
+</SCRIPT>
+<div id="div_fixa_rodape"><a href="#rodape" id="link"><img id="iconav" name="iconav" src="https://www.hostgator.com.br/index_arquivos/site-map-rodape.png" width="32" height="32" alt="Mapa do Site" title="Mapa do Site" border="0" onclick="swapImage()"></a></div>
+<a name="rodape"></a>
+<div id="rodape_black">
+  <div id="geral_rodape">
+    <div id="forum">
+      <p class="p5"><img src="https://www.hostgator.com.br/index_arquivos/ico_forum.jpg" width="30" height="30" /><a href="http://forum.hostgator.com.br" target="_blank">Fórum</a></p>
+      <p class="rodape3">Leia o nosso Forum em: <br />
+      <br />
+      <a href="http://forum.hostgator.com.br" target="_blank">http://forum.hostgator.com.br</a></p> 
+    </div>
+    <!-- fim div forum -->
+    <div id="blog">
+      <p class="p5"><img src="https://www.hostgator.com.br/index_arquivos/ico_blog.jpg" width="30" height="30" /><a href="http://blog.hostgator.com.br" target="_blank">Blog</a></p>
+      <p class="rodape3">Saiba as novidades da Hostgator e do mundo da Hospedagem no blog: <br />
+      <br />
+      <a href="http://blog.hostgator.com.br" target="_blank">http://blog.hostgator.com.br</a>
+      </p>
+    </div>
+    <!-- fim div blog -->
+    <div id="contato">
+      <p class="p5"><img src="https://www.hostgator.com.br/index_arquivos/ico_contato.jpg" width="30" height="30"/><a href="http://www.hostgator.com.br/contatos.shtml">Contato</a></p>
+      <p class="rodape3">
+        <!--<a href="javascript:void(0);" onclick="window.open('http://messenger.providesupport.com/messenger/hostgator.html', (Math.floor(Math.random()*100000)), 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=575,left = 310,top = 275');" > -->
+        <a href="http://www.hostgator.com.br/suporte.shtml"><img src="https://www.hostgator.com.br/images/chat_suporte_rodape.png" alt="" width="32" height="32" border="0" align="absmiddle" hspace="5"/>Suporte ao vivo</a><br />
+        <br />
+        <img src="https://www.hostgator.com.br/images/contatos_rodape.gif" alt="" width="162" height="68" /></p>
+    </div>
+    <!-- fim div contato -->
+    <br clear="all" />
+    <div id="baixo">
+      <p class="p5"><a href="http://www.hostgator.com.br/empresa.shtml">Sobre nós</a></p>
+      <p class="rodape3"><a href="http://www.hostgator.com.br/empresa.shtml">A empresa</a><br />
+        <a href="https://hostgator.com.br/empresa.shtml">Infra-estrutura</a><br />
+        <a href="https://hostgator.com.br/termos_de_servico.shtml"> Termos de Serviço</a><br />
+        <a href="http://faq.hostgator.com.br/" target="_blank">FAQ (perguntas frequentes) </a> <a href="http://hostgator.com.br/trabalhe-conosco.php"> Trabalhe Conosco</a><br />
+      </p>
+    </div>
+    <!-- fim div contato -->
+    <div id="baixo">
+      <p class="p5"><a href="https://hostgator.com.br/services.shtml">Serviços</a></p>
+      <p class="rodape3"><a href="https://www.hostgator.com.br/compartilhado/planos-de-hospedagem.php">Hospedagem de Sites Linux </a><br />
+        <a href="https://www.hostgator.com.br/compartilhado/planos-de-revenda.php">Revenda de Hospedagem</a><br />
+        <a href="https://www.hostgator.com.br/servidores/planos-de-servidor-dedicado.php">Servidores Dedicados Linux</a><br />
+        <a href="https://www.hostgator.com.br/servidores/planos-de-servidor-dedicado.php">Servidores Dedicados Windows</a><br />
+        <a href="https://www.hostgator.com.br/assinar-passo01.php">Assinatura</a><br />
+      </p>
+    </div>
+    <!-- fim div contato -->
+    <div id="baixo">
+      <p class="p5"><a href="suporte.shtml">Suporte ao cliente</a></p>
+      <p class="rodape3"><a href="http://hostgator.com.br/suporte.shtml">Contate nosso Suporte</a><br />
+        <a href=" http://www.mixcommerce.com.br/painel/" target="_blank">Sistema de cobrança</a><br />
+        <a href="http://suporte.hostgator.com.br/" target="_blank">Sistema de Tickets</a><br />
+        <a href="http://hostgator.com.br/tutorials.shtml">Tutoriais</a><br />
+        <a href="http://forum.hostgator.com.br/" target="_blank">Fórum</a><br />
+        <a href="http://blog.hostgator.com.br/" target="_blank">Blog</a><br />
+        <a href="http://hostgator.com.br/suporte.shtml#extras">Extra Addons</a><br />
+        <a href="http://www.hostgator.com.br/denuncia.php">Quero fazer uma denuncia</a><br />
+        <a href="http://www.planalto.gov.br/ccivil_03/LEIS/L8078.htm" target="_blank">Código de defesa do consumidor</a><br />
+      </p>
+    </div>
+    <!-- fim div contato -->
+    <div id="baixo">
+      <p class="p5"><a href="http://www.hostgator.com.br/assinar-passo01.php">Assine já</a></p>
+      <p class="rodape3"><a href="http://www.hostgator.com.br/assinar-passo01.php">Contrate</a><br />
+        <a href="https://www.hostgator.com.br/afiliados.shtml">Programa afiliados</a><br />
+        <a href="https://www.hostgator.com.br/afiliados/login.php">Login</a><br />
+      </p>
+    </div>
+    <!-- fim div contato -->
+    <br clear="all" />
+    <div id="direitos">
+      <p class="rodape4">Copyright © 2010  |  HostGator.com.br</p>
+    </div>
+    <!-- fim div direitos -->
+  </div>
+  <!-- fim div geral_rodape -->
+</div>
+<!-- fim div rodape_black -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10029504-1");
+pageTracker._setDomainName(".hostgator.com.br");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- BEGIN LivePerson Monitor. --><script language='javascript'> var lpMTagConfig = {'lpServer' : "server.iad.liveperson.net",'lpNumber' : "43697559",'lpProtocol' : "https"}; function lpAddMonitorTag(src){if(typeof(src)=='undefined'||typeof(src)=='object'){src=lpMTagConfig.lpMTagSrc?lpMTagConfig.lpMTagSrc:'/hcp/html/mTag.js';}if(src.indexOf('http')!=0){src=lpMTagConfig.lpProtocol+"://"+lpMTagConfig.lpServer+src+'?site='+lpMTagConfig.lpNumber;}else{if(src.indexOf('site=')<0){if(src.indexOf('?')<0)src=src+'?';else src=src+'&';src=src+'site='+lpMTagConfig.lpNumber;}};var s=document.createElement('script');s.setAttribute('type','text/javascript');s.setAttribute('charset','iso-8859-1');s.setAttribute('src',src);document.getElementsByTagName('head').item(0).appendChild(s);} if (window.attachEvent) window.attachEvent('onload',lpAddMonitorTag); else window.addEventListener("load",lpAddMonitorTag,false);</script><!-- END LivePerson Monitor. -->
+</body>
+</html>

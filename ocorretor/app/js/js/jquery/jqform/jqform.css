@@ -1,0 +1,29 @@
+#jqform .progress { position:relative; width:400px;}
+#jqform .bar { width:0%; height:20px; border-radius: 3px; }
+#jqform .percent { position:absolute; display:inline-block; top:1px; left:48%; }
+
+#jqform .file-wrapper {
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    border:0px solid blue;
+}
+#jqform .file-wrapper input {
+    cursor: pointer;
+    font-size: 100px;
+    height: 100%;
+    filter: alpha(opacity=1);
+    -moz-opacity: 0.01;
+    opacity: 0.01;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#jqform .file-wrapper .btn-upload {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 4px 18px;
+    text-transform: uppercase;
+    cursor:pointer;
+}

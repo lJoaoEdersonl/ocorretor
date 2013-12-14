@@ -1,0 +1,312 @@
+html {
+overflow:0;
+}
+
+a:focus {
+outline:0 solid;
+}
+
+a:link,a:visited {
+color:#336799;
+font-weight:700;
+}
+
+body {
+font-family:Tahoma, kalimati, Arial;
+font-size:12px;
+background-image:url('https://hostgator.com.br/images/bg.gif');
+margin:0;
+}
+
+div {
+outline:0 dotted #000;
+}
+
+.clear {
+clear:both;
+}
+
+.lclr {
+clear:left;
+}
+
+.bold {
+font-weight:800;
+}
+
+#wrapper {
+width:765px;
+margin:10px auto;
+}
+
+#container {
+outline:0 solid #000;
+margin:auto;
+padding:0;
+}
+
+#content {
+height:auto;
+min-height:100%;
+background-color:#fff;
+font-family:"trebuchet ms", Helvetica, kalimati,arial;
+}
+
+#shadow {
+background-image:url('https://hostgator.com.br/images/leftshadow.png');
+background-position:0 100px;
+background-repeat:repeat-y;
+outline:0 solid #fff;
+padding-left:10px;
+}
+
+.imgright {
+float:right;
+}
+
+.livechat a:link,.livechat a:visited {
+background-image:url('https://hostgator.com.br/images/chat_online.png');
+background-repeat:no-repeat;
+width:80px;
+height:80px;
+display:block;
+float:right;
+}
+
+#header {
+width:755px;
+background-image:url('https://hostgator.com.br/images/logo_bg.gif');
+background-repeat:repeat-x;
+-moz-border-radius-topright:5px;
+-moz-border-radius-topleft:5px;
+position:relative;
+left:10px;
+}
+
+.logo {
+background-image:url('https://hostgator.com.br/images/logonew2.png');
+background-repeat:no-repeat;
+height:84px;
+position:relative;
+right:10px;
+width:400px;
+cursor:pointer;
+}
+
+.head {
+background-image:url('https://hostgator.com.br/images/logo_topnew.png');
+background-repeat:no-repeat;
+height:17px;
+position:relative;
+right:-3px;
+}
+
+.support {
+float:right;
+background-image:url('https://hostgator.com.br/images/toprightcorner.gif');
+background-repeat:no-repeat;
+background-position:top right;
+height:84px;
+width:320px;
+padding:0;
+}
+
+#navigation {
+background-image:url('https://hostgator.com.br/images/newnav.png');
+height:49px;
+border-bottom:1px solid #000;
+}
+
+
+#navigation ul {
+text-align:center;
+list-style:none;
+margin:0;
+padding:17px 0 0;
+}
+
+#navigation li {
+background-image:url('https://hostgator.com.br/images/navsep.gif');
+background-repeat:no-repeat;
+background-position:0 0;
+display:inline;
+padding:0 6px 0 12px;
+}
+
+#navigation li.home {
+background-image:none;
+margin-left:-6px;
+}
+
+#navigation a {
+font-family:Tahoma, kalimati, Arial;
+text-transform:uppercase;
+font-weight:700;
+color:#FFF;
+text-decoration:none;
+}
+
+#navigation a:link,.navigation a:visited {
+color:#fff;
+}
+
+#navigation a:hover {
+color:#f7c945;
+text-decoration:underline;
+}
+#newfooter {
+position:relative;
+
+width:721px;
+height:185px;
+background-image:url('https://hostgator.com.br/images/newfooter4.png');
+background-repeat:no-repeat;
+padding:15px 10px 20px 35px;
+}
+
+#newfooter ul {
+position:relative;
+top:4px;
+line-height:14px;
+width:150px;
+float:left;
+list-style:none;
+margin:0 20px 0 0;
+padding:0;
+}
+
+#newfooter .foottitle {
+font-family:"Trebuchet MS" , Helvetica , kalimati,arial;
+font-size:18px;
+color:#336799;
+padding-bottom:9px;
+border-bottom:1px dotted #333;
+margin:0 0 5px 2px;
+}
+
+#newfooter .foottitle span {
+position:relative;
+left:-5px;
+}
+
+#newfooter li {
+padding-left:3px;
+margin-bottom:3px;
+}
+
+#newfooter a:link,#newfooter a:visited {
+color:#333;
+font-weight:400;
+text-decoration:none;
+}
+
+#newfooter a:hover {
+font-weight:700;
+}
+
+#notitleul li {
+padding-left:18px;
+}
+
+#copyright p {
+clear:left;
+float:left;
+font-size:12px;
+position:relative;
+top:4px;
+color:#333;
+}
+
+#copyright a {
+color:#333;
+font-weight:400;
+font-size:12px;
+}
+
+
+/** PAGINA DEFAULT ***/
+
+#geral_dafault {
+	width:755px;
+	height:530px;
+}
+
+#links_rapidos {
+	background:url('https://hostgator.com.br/index_arquivos/bg_links_rapidos2.jpg') no-repeat;
+	width:520px;
+	height:286px;
+	float:left;
+	margin:10px 0 0 115px;
+	_margin:10px 0 0 55px;
+	padding:35px 0 0 10px;
+}
+
+.link1 a{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#3d648d;
+	text-decoration:none;
+}
+.link1 a:hover{
+	text-decoration:none;
+}
+
+#box_icos {
+	width:100px;
+	float:left;
+	margin-bottom:8px;
+}
+
+.bigbox {
+background-image:url('https://hostgator.com.br/index_arquivos/big_box.jpg');
+height: 166px;
+width:663px;
+margin:10px 0 0 50px;
+_margin:10px 0 0 25px;
+float:left;
+background-repeat: no-repeat;
+padding:10px 0 0 40px; 
+}
+.bigbox h3{
+font-family: trebuchet ms;
+font-size: 15px;
+font-weight: none;
+color: #336799;
+margin: 0px 0 5px 0;
+}
+
+.bigbox p {
+font-size: 12px;
+font-family: tahoma;
+margin: 0 0 10px 0;
+}
+.livechat a:link,.livechat a:visited {
+background-image:url('https://www.hostgator.com.br/images/chat-online.gif');
+background-repeat:no-repeat;
+width:68px;
+height:63px;
+display:block;
+float:right;
+margin-top:9px;
+margin-right: 10px;
+}
+.chamada-header {
+float: left;
+width: 210px;
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+color:#2f3e4d;
+font-size: 14px;
+line-height:1.1em;
+font-style:italic;
+text-align: center;
+margin-top: 31px;
+margin-left: -30px;
+}
+.shadowbottom {
+height:22px;
+width:775px;
+background-color:transparent;
+background-image:url('https://www.hostgator.com.br/images/content-bottom.png');
+background-repeat:no-repeat;
+}

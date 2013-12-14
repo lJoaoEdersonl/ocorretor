@@ -1,0 +1,212 @@
+<!doctype html> 
+<html lang="en"> 
+    <head>
+        <style>
+            /* RESET */
+            html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a,
+            font, img, dl, dt, dd, ol, ul, li, legend, table, tbody, tr, th, td 
+            {margin:0px;padding:0px;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;list-style:none;}
+            a img {border: none;}
+            ol li {list-style: decimal outside;}
+            fieldset {border:0;padding:0;}
+
+            body { font-family: sans-serif; font-size: 1em; }
+
+            div#container { width: 780px; margin: 0 auto; padding: 1em 0;  }
+            p { margin: 1em 0; max-width: 700px; }
+            h1 + p { margin-top: 0; }
+
+            h1, h2 { font-family: Georgia, Times, serif; }
+            h1 { font-size: 2em; margin-bottom: .75em; }
+            h2 { font-size: 1.5em; margin: 2.5em 0 .5em; border-bottom: 1px solid #999; padding-bottom: 5px; }
+            h3 { font-weight: bold; }
+
+            ul li { list-style: disc; margin-left: 1em; }
+            ol li { margin-left: 1.25em; }
+
+            div.side-by-side { width: 100%; margin-bottom: 1em; }
+            div.side-by-side > div { float: left; width: 50%; }
+            div.side-by-side > div > em { margin-bottom: 10px; display: block; }
+
+            a { color: orange; text-decoration: underline; }
+
+            .faqs em { display: block; }
+
+            .clearfix:after {
+                content: "\0020";
+                display: block;
+                height: 0;
+                clear: both;
+                overflow: hidden;
+                visibility: hidden;
+            }
+
+            footer {
+                margin-top: 2em;
+                border-top: 1px solid #666;
+                padding-top: 5px;
+            }
+        </style>
+        <link rel="stylesheet" href="jscripts/jquery/chosen/chosen.css" />
+    </head>
+    <body>
+        <form action="http://localhost/PHPFrodo/teste/foo/" method="post">
+            <div id="container">
+                <h2>Standard Select</h2>
+                <div class="side-by-side clearfix">
+                    <div>
+                        <em>Into This</em>        
+                        <select data-placeholder="Choose a Country..." class="chzn-select" name="s1[]" multiple style="width:350px;" tabindex="4">
+                            <option value=""></option> 
+                            <option value="Virgin Islands, British">Virgin Islands, British</option> 
+                            <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option> 
+                            <option value="Wallis and Futuna">Wallis and Futuna</option> 
+                            <option value="Western Sahara">Western Sahara</option> 
+                            <option value="Yemen">Yemen</option> 
+                            <option value="Zambia">Zambia</option> 
+                            <option value="Zimbabwe">Zimbabwe</option>
+                        </select>
+                    </div>                    
+                    <div>
+                        <em>Into This</em>        
+                        <select data-placeholder="Choose a Country..." class="chzn-select" name="s2" style="width:350px;" tabindex="2">
+                            <option value=""></option> 
+                            <option value="Wallis and Futuna">Wallis and Futuna</option> 
+                            <option value="Western Sahara">Western Sahara</option> 
+                            <option value="Yemen">Yemen</option> 
+                            <option value="Zambia">Zambia</option> 
+                            <option value="Zimbabwe">Zimbabwe</option>
+                        </select>
+                    </div>
+                </div>
+
+                <h2>&lt;optgroup&gt; Support</h2>
+                <div class="side-by-side clearfix">
+                    <div>
+                        <em>Single Select with Groups</em>
+                        <select data-placeholder="Your Favorite Football Team" name="s3[]" style="width:350px;" class="chzn-select" tabindex="5">
+                            <option value=""></option>
+                            <optgroup label="NFC EAST">
+                                <option>Dallas Cowboys</option>
+                                <option>New York Giants</option>
+                                <option>Philadelphia Eagles</option>
+                                <option>Washington Redskins</option>
+                            </optgroup>
+                            <optgroup label="NFC NORTH">
+                                <option>Chicago Bears</option>
+                                <option>Detroit Lions</option>
+                                <option>Green Bay Packers</option>
+                                <option>Minnesota Vikings</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <em>Multiple Select with Groups</em>
+                        <select data-placeholder="Your Favorite Football Team" name="s4[]" style="width:350px;" class="chzn-select" multiple tabindex="6">
+                            <option value=""></option>
+                            <optgroup label="NFC EAST">
+                                <option>Dallas Cowboys</option>
+                                <option>New York Giants</option>
+                                <option>Philadelphia Eagles</option>
+                                <option>Washington Redskins</option>
+                            </optgroup>
+                            <optgroup label="NFC NORTH">
+                                <option>Chicago Bears</option>
+                                <option>Detroit Lions</option>
+                                <option>Green Bay Packers</option>
+                                <option>Minnesota Vikings</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+
+                <h2>Selected and Disabled Support</h2>
+                <div class="side-by-side clearfix">
+                    <p>Chosen automatically highlights selected options and removes disabled options.</p>
+                    <div>
+                        <em>Single Select</em>
+                        <select data-placeholder="Your Favorite Type of Bear" name="s5" style="width:350px;" class="chzn-select" tabindex="7">
+                            <option value=""></option>
+                            <option>American Black Bear</option>
+                            <option>Asiatic Black Bear</option>
+                            <option>Brown Bear</option>
+                            <option>Giant Panda</option>
+                            <option selected>Sloth Bear</option>
+                            <option disabled>Sun Bear</option>
+                            <option>Polar Bear</option>
+                            <option disabled>Spectacled Bear</option>
+                        </select>
+                    </div>
+                    <div>
+                        <em>Multiple Select</em>
+                        <select data-placeholder="Your Favorite Types of Bear" style="width:350px;" multiple class="chzn-select" name="s6[]" tabindex="8">
+                            <option value=""></option>
+                            <option>American Black Bear</option>
+                            <option>Asiatic Black Bear</option>
+                            <option>Brown Bear</option>
+                            <option>Giant Panda</option>
+                            <option selected>Sloth Bear</option>
+                            <option disabled>Sun Bear</option>
+                            <option selected>Polar Bear</option>
+                            <option disabled>Spectacled Bear</option>
+                        </select>
+                    </div>
+                </div>
+
+                <h2>Allow Deselect on Single Selects</h2>
+                <div class="side-by-side clearfix">
+                    <div class="side-by-side clearfix">
+                        <select data-placeholder="Your Favorite Type of Bear" style="width:350px;" class="chzn-select-deselect" name="s7" tabindex="7">
+                            <option value=""></option>
+                            <option>American Black Bear</option>
+                            <option>Asiatic Black Bear</option>
+                            <option>Brown Bear</option>
+                            <option>Giant Panda</option>
+                            <option selected>Sloth Bear</option>
+                            <option>Sun Bear</option>
+                            <option>Polar Bear</option>
+                            <option>Spectacled Bear</option>
+                        </select>
+                    </div>
+                </div>
+
+                <h2>Right to Left Support</h2>
+                <div class="side-by-side clearfix">
+                    <p><code>&lt;select class="chzn-select <strong>chzn-rtl</strong>"&gt;</code></p>
+                    <div>
+                        <em>Single right to left select</em>
+                        <select data-placeholder="Your Favorite Type of Bear" style="width:350px;" class="chzn-select chzn-rtl" name="s8" tabindex="9">
+                            <option value=""></option>
+                            <option>American Black Bear</option>
+                            <option>Asiatic Black Bear</option>
+                            <option>Brown Bear</option>
+                            <option>Giant Panda</option>
+                            <option selected>Sloth Bear</option>
+                            <option>Polar Bear</option>
+                        </select>
+                    </div>
+                    <div>
+                        <em>Multiple right to left select</em>
+                        <select data-placeholder="Your Favorite Types of Bear" style="width:350px;" name="s9[]" multiple class="chzn-select  chzn-rtl" tabindex="10">
+                            <option value=""></option>
+                            <option>American Black Bear</option>
+                            <option>Asiatic Black Bear</option>
+                            <option>Brown Bear</option>
+                            <option>Giant Panda</option>
+                            <option selected>Sloth Bear</option>
+                            <option selected>Polar Bear</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button>Submit</button>
+            </div>
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+            <script src="jscripts/jquery/chosen/chosen.jquery.js" type="text/javascript"></script>
+            <script type="text/javascript"> 
+                $(".chzn-select").chosen(); 
+                $(".chzn-select-deselect").chosen({allow_single_deselect:true}); 
+            </script>
+        </form>
+    </body>

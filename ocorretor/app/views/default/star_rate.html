@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Sic</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <!--JQuery-->
+        <script src="jscripts/jquery/jquery.min.js" type="text/javascript"></script>
+        <!--JQuery Raty-->
+        <script type="text/javascript" src="jscripts/jquery/raty/js/jquery.raty.js"></script>       
+        <!--main scripts-->
+        <script src="jscripts/default/loader.js" type="text/javascript"></script>
+        <script src="jscripts/public/pedido.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="css/public/main.css" type="text/css" />
+    </head>
+    <body>
+
+        <div id="wrap" class="container_12">
+
+
+            <div id="header" class="grid_12">
+
+            </div>
+
+            <div id="menu" class="grid_12">
+                <ul>
+                    <li><a href="<!--{baseUri}-->/acesso/">Página Principal</a></li>
+                    <li><a href="<!--{baseUri}-->/pedido/consultar/"  class="current">Consultar Pedido</a></li>
+                    <li><a href="<!--{baseUri}-->/pedido/registrar/">Registrar Pedido</a></li>
+                    <li><a href="<!--{baseUri}-->/recurso/consultar/">Consultar Recurso</a></li>
+                    <li><a href="<!--{baseUri}-->/recurso/registrar/">Registrar Recurso</a></li>
+                    <li><a href="<!--{baseUri}-->/login/logout/">Sair / Deslogar</a></li>
+                </ul>
+            </div>
+
+
+            <div id="content" class="grid_12">
+
+                <div class="mar-top-30 grid_12 ">
+
+                    <div id="detalhe" class="grid_11">
+
+                        <p>
+                            <strong>Protocolo:</strong> <!--{pedido_protocolo}--> -
+                            <strong>Aberto em:</strong> <!--{pedido_data}--> -
+                            <strong>Recebimento:</strong> <!--{recebimento_nome}-->
+                        </p>
+                        <p><strong>Situação:</strong> <!--{situacao_nome}--></p>
+                        <p><strong>Órgão:</strong> <!--{orgao_nome}--></p>
+                        <p class="desc"><strong>Solicitação:</strong> <!--{pedido_descricao}--></p>
+
+                        <p>&nbsp;</p>
+
+                        <div class="history">
+                            <!--{loop:resp}-->
+                            <!--{<ul>}-->
+                            <!--{<p>Respondido por resp.user_nome em resp.resposta_data</p>}-->
+                            <!--{<p>resp.resposta_descricao</p>}-->
+                            <!--{<p class="_resp.resposta_anexo attach">}-->
+                            <!--{<a href="resp.baseUri/arquivos/resp.resposta_anexo">A resposta possui anexo - clique aqui para fazer download</a>}-->
+                            <!--{</p>}-->
+                            <!--{</ul>}-->
+                            <!--{end:resp}-->
+                        </div>
+                        <p>&nbsp;</p>
+
+                        <p><strong>Por favor, selecione abaixo a nota para resposta recebida:</strong></p>
+                        <div class="<!--{showHide}-->">
+                            <div class="raty" id="<!--{pedido_id}-->"></div>
+                        </div>
+
+                    </div>
+
+                    <p>&nbsp;</p>
+                </div>
+
+            </div>
+
+            <div id="footer" class="grid_12">
+
+            </div>            
+
+        </div>
+
+        <script>
+            window.onload = function()
+            {
+                $('.raty').raty({
+                    path: '<!--{baseUri}-->/application/jscripts/jquery/raty/img/',
+                    score: '<!--{pedido_aceite}-->',
+                    click: function(score, evt) {
+                        setResposta($(this).attr('id'), score);
+                    }                    
+                }); 
+            }
+        </script>
+    </body>
+</html>
